@@ -2,6 +2,8 @@ import { projects } from "@/data/projects";
 
 const BASE_URL = "https://peacechigozie.com"; // Replace with her final domain
 
+export const dynamic = "force-dynamic";
+
 export default async function sitemap() {
   // Static route definitions
   const staticRoutes = [
@@ -12,7 +14,7 @@ export default async function sitemap() {
     url: `${BASE_URL}${route}`,
     lastModified: new Date().toISOString(),
     changeFrequency: route === "" ? "weekly" : "monthly",
-    priority: route === "" ? 1.0 : 0.8,
+    priority: route === "/" ? 1.0 : 0.8,
   }));
 
   // Dynamic project case study routes
