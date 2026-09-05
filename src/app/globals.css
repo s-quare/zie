@@ -1,26 +1,95 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+
+  --color-coffee-dark: #1e1512; /* Deepest espresso background */
+  --color-coffee-base: #2b1e1a; /* Card surfaces & section containers */
+  --color-coffee-medium: #a08375; /* Subtitles, muted text, soft borders */
+  --color-coffee-tan: #d9c3b0; /* Accent headers, active links, hover states */
+  --color-coffee-cream: #fdfbf7; /* Primary light text / main titles */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  
+
+  body {
+    /* Global dark coffee background with light cream text */
+    @apply bg-coffee-dark text-coffee-cream text-sm min-h-screen antialiased;
+  }
+
+  main {
+    @apply max-w-7xl mx-auto w-full;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply text-base;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .skeleton-shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(160, 131, 117, 0.1) 0%,
+      rgba(160, 131, 117, 0.3) 50%,
+      rgba(160, 131, 117, 0.1) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.8s infinite linear;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-coffee-medium) var(--color-coffee-dark);
+  }
 }
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+
+
+
+
+
