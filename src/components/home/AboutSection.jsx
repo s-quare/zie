@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/Link";
 import { motion } from "framer-motion";
 
 import {
@@ -46,7 +46,7 @@ export default function AboutSection() {
           transition={{ duration: 0.5 }}
           className="lg:col-span-4 flex flex-col items-center justify-center text-center gap-4"
         >
-          <div className="relative w-42 sm:w-54 aspect-square rounded-full overflow-hidden border-4 border-coffee-cream/80 shadow-xl bg-coffee-dark">
+          <div className="relative w-42 sm:w-54 aspect-square rounded-full overflow-hidden border-4 border-coffee-cream/80 shadow-xl bg-radial from-coffee-tan  to-black/50">
             <Image
               src="/images/zie-image2.webp"
               alt="Peace Chinagorom Chigozie"

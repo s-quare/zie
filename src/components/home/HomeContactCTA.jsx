@@ -35,7 +35,7 @@ export default function HomeContactCTA() {
       className="w-full my-20 px-4 sm:px-8"
     >
       {/* Section Header */}
-      <div className="mb-8 ">
+      <div className="mb-6 ">
         <h2
           id="contact-heading"
           className="font-serif font-bold text-3xl sm:text-4xl text-coffee-cream leading-tight"
@@ -43,6 +43,13 @@ export default function HomeContactCTA() {
           {`Let's`} Work Together
         </h2>
       </div>
+
+      <p className="mb-10 max-w-3xl">
+        I am currently open to full-time Associate Product Manager
+        opportunities, contract product operations, and remote cross-functional
+        team coordination. If you need someone to manage your releases, run
+        tight QA cycles, or keep your sprints on track, let’s talk.
+      </p>
 
       {/* Direct Contact Quick Links */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">

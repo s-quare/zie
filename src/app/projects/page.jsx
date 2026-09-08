@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import Link from "@/components/Link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight, Layers, Filter } from "lucide-react";
 import SmartImage from "@/components/ui/SmartImage";

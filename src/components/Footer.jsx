@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/Link";
 import { CONTACT_INFO } from "@/data/constants";
 
 export default function Footer() {

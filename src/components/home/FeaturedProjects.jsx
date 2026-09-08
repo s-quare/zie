@@ -1,12 +1,11 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/Link";
 import { motion } from "framer-motion";
 import { ArrowUpRight, ArrowRight, Layers } from "lucide-react";
 import SmartImage from "@/components/ui/SmartImage";
 import { projects } from "@/data/projects";
 import { LiquidGlass } from "@/components/LiquidGlass";
-
 
 export default function FeaturedProjects() {
   // Select the top 2 featured projects for the homepage teaser
@@ -18,7 +17,7 @@ export default function FeaturedProjects() {
       className="w-full my-20 px-4 sm:px-8"
     >
       {/* Section Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+      <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-6">
         <h2
           id="featured-projects-heading"
           className="font-mono font-bold text-3xl sm:text-4xl text-coffee-cream leading-tight tracking-wide"
@@ -34,6 +33,12 @@ export default function FeaturedProjects() {
           <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
         </Link>
       </div>
+
+      <p className="mb-12 max-w-3xl">
+        Here are some of the products, platforms, and features I’ve contributed to, to move
+        from the planning board to production. These case studies highlight
+        hands-on execution, rigorous quality assurance, and real user impact.
+      </p>
 
       {/* Featured Teasers Grid/Stack */}
       <div className="flex flex-col gap-12 lg:gap-16">
@@ -66,8 +71,8 @@ export default function FeaturedProjects() {
                   />
                   {/* Glassmorphic Badge Overlay */}
                   <div className="absolute top-4 left-4 bg-coffee-dark/80 backdrop-blur-md border border-coffee-medium/30 px-3 py-1 rounded-full text-[10px] font-mono text-white uppercase tracking-wider">
-                   <LiquidGlass />
-                   <span className="relative">{project.teaser.category}</span> 
+                    <LiquidGlass />
+                    <span className="relative">{project.teaser.category}</span>
                   </div>
                 </div>
               </div>
@@ -88,7 +93,7 @@ export default function FeaturedProjects() {
 
                   {/* Project Title */}
                   <h3 className="font-serif font-bold text-2xl sm:text-3xl text-white mb-3 group-hover:text-coffee-tan transition-colors duration-300">
-                      {project.title}
+                    {project.title}
                   </h3>
 
                   {/* Headline Teaser */}
@@ -97,9 +102,12 @@ export default function FeaturedProjects() {
                   </p>
 
                   {/* Highlight Metrics */}
-                  <div className="grid grid-cols-2 gap-4 bg-coffee-dark/50 border border-coffee-medium/20 p-4 rounded-lg mb-6">
+                  <div className="grid grid-cols-2 gap-4 bg-coffee-dark/50 border border-coffee-medium/20 px-2 py-3.5 rounded-lg mb-6">
                     {project.teaser.metrics.map((metric, mIdx) => (
-                      <div key={mIdx} className={`text-center ${mIdx % 2 === 0 && 'border-r border-coffee-medium/20'} pr-2`}>
+                      <div
+                        key={mIdx}
+                        className={`text-center ${mIdx % 2 === 0 && "border-r border-coffee-medium/20"} pr-2`}
+                      >
                         <span className="block font-sans text-[10px] uppercase tracking-wider text-coffee-cream">
                           {metric.label}
                         </span>
@@ -143,7 +151,10 @@ export default function FeaturedProjects() {
           className="inline-flex items-center gap-3 px-6 py-3 bg-coffee-dark hover:bg-coffee-base border border-coffee-medium/30 text-coffee-cream font-mono text-xs uppercase tracking-wider rounded-lg transition-all shadow-md group"
         >
           <Layers className="w-4 h-4 text-coffee-tan" />
-          <span>View All Product Works <span className="hidden sm:inline"> & Case Studies</span></span>
+          <span>
+            View All Product Works{" "}
+            <span className="hidden sm:inline"> & Case Studies</span>
+          </span>
           <ArrowRight className="w-4 h-4 text-coffee-tan group-hover:translate-x-1 transition-transform duration-500" />
         </Link>
       </div>

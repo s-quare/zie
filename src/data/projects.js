@@ -1,142 +1,150 @@
 export const projects = [
     {
         id: "01",
-        slug: "servicedey-product-operations",
-        featured: true, // Used for Home Teaser filter
-        title: "Servicedey",
-        subtitle: "Digital Services & On-Demand Booking Platform",
-        client: "Peakpath Innovation",
-        role: "Associate Product Manager",
-        timeline: "Jun 2025 – Present",
-        platforms: ["iOS", "Android"],
+        slug: "glow-up-beauty-services",
+        featured: true,
+        title: "Glow Up (GU)",
+        subtitle: "Beauty Services On-Demand Booking Platform",
+        client: "Glow Up",
+        role: "Associate / Product Support",
+        timeline: "",
+        platforms: ['web', 'android', 'ios'],
 
         // Media assets
         images: {
-            primary: "/images/servicedey-hero.webp",
-            secondary: "/images/servicedey-hero.webp",
+            primary: "/images/glowup1.jpg",
+            secondary: "/images/glowup2.jpg",
         },
 
         // Tier 1: Home Page Teaser Card
         teaser: {
-            category: "LIVE PRODUCT OPS & QA",
-            headline: "Managing end-to-end product operations, mobile release QA, and user activation for a multi-platform digital service marketplace.",
+            category: "PRODUCT SUPPORT & TEAM COORDINATION",
+            headline: "Supporting sprint follow-up, cross-team communication, and issue escalation for a beauty-services booking platform in Saudi Arabia.",
             metrics: [
-                { label: "Target Environments", value: "APK / Staging / iOS" },
-                { label: "Primary Objective", value: "User Activation & QA" },
+                { label: "Market", value: "Saudi Arabia" },
+                { label: "Core Scope", value: "Sprint Follow-up & Escalation" },
             ],
-            tags: ["Product Operations", "APK Testing", "User Onboarding", "Cross-Functional"],
+            tags: ["Product Support", "Sprint Coordination", "Remote Team", "Escalation"],
         },
 
         // Tier 2: /projects Listing Page Metadata
         listing: {
-            shortDescription: "Overseeing live platform operations across iOS and Android, driving cross-functional alignment, and testing multi-environment builds to safeguard quality.",
-            badge: "Active Operations",
-            deliverables: ["Multi-Env Build QA", "Activation Funnel Optimization", "User Feedback Systems"],
+            shortDescription: "Followed up with engineering during weekly sprints, maintained communication between the Lead PM and team, and escalated delays and blockers to keep delivery on track.",
+            badge: "Live Product",
+            deliverables: ["Sprint Follow-up", "Team Communication", "Issue Escalation"],
         },
 
         // Tier 3: /projects/[slug] Deep-Dive Case Study
         caseStudy: {
-            executiveSummary: "Servicedey is a live digital services platform bridging service providers and users across iOS and Android builds. As Associate Product Manager at Peakpath Innovation, I manage daily product operations, coordinate development milestones between engineering and design, and conduct rigorous QA across staging, APK, production, and iOS environments.",
+            executiveSummary: "Glow Up (GU) is a beauty-services platform connecting customers in Saudi Arabia with skilled beauty professionals who provide services at home, including makeup, hairstyling, spa and massage services, nail services, and beauty-related models. Users can select a service, choose an expert, book an appointment, view ratings and previous work, and pay online. I worked alongside the Lead Product Manager, supporting the team through coordination, sprint follow-up, communication, and issue escalation.",
 
-            challenge: "With ongoing platform enhancements and new release cycles, maintaining seamless quality across both mobile operating systems while reducing onboarding drop-offs required structured testing routines and proactive customer activation channels.",
+            challenge: "Keeping a remote development team on track during weekly sprints and ensuring nothing fell through the cracks between task allocation and execution.",
 
             keyResponsibilities: [
                 {
-                    title: "Multi-Environment Quality Assurance",
-                    description: "Executed comprehensive manual testing across APK, staging, production, and native iOS builds to identify bugs before public deployment.",
+                    title: "Sprint Follow-Up",
+                    description: "Followed up with the engineering and development team during weekly sprints to ensure assigned tasks were being worked on.",
                 },
                 {
-                    title: "User Onboarding & Activation Optimization",
-                    description: "Monitored user signup drop-offs and spearheaded engagement workflows targeting incomplete registrations to improve platform activation rates.",
+                    title: "Cross-Team Communication",
+                    description: "Maintained communication between the Lead PM and team members regarding progress, tasks, and issues.",
                 },
                 {
-                    title: "Cross-Functional Milestone Coordination",
-                    description: "Aligned engineering, UI/UX design, and business teams to maintain sprint momentum and enforce feature timelines.",
+                    title: "Delay & Blocker Escalation",
+                    description: "Escalated development delays and blockers to the Lead PM to keep the product on schedule.",
                 },
                 {
-                    title: "User Feedback Loop Implementation",
-                    description: "Analyzed customer feedback data and field research to formulate usability improvement recommendations for product backlogs.",
+                    title: "Product & Design Involvement",
+                    description: "Participated in product meetings, stayed involved in the product/design process, and provided feedback where relevant.",
                 },
             ],
 
             resultsAndImpact: [
-                "Enhanced build quality and release stability across both iOS and Android environments.",
-                "Increased onboarding completion rates through targeted follow-up workflows for uncompleted registrations.",
-                "Created an organized feedback pipeline directly translating user friction points into sprint priorities.",
+                "Glow Up progressed to a live product.",
+                "Identified a communication gap where developers had not seen a task allocated to them on Jira, and escalated it to the Lead PM for resolution.",
+                "Gained early practical exposure to working within a remote product team.",
             ],
 
-            toolsUsed: ["Jira", "Trello", "Confluence", "APK QA Tools", "Google Analytics", "Google Workspace"],
+            toolsUsed: ["WhatsApp", "Slack", "Google Meet", "Figma", "Jira"],
         },
     },
 
 
     {
         id: "02",
-        slug: "deotechnological-product-internship",
-        featured: true, // Included in Home Teaser / Featured section
-        title: "Deotechnological Usability & Product Strategy",
-        subtitle: "Customer Insights, Usability Audits & Backlog Refinement",
-        client: "Deotechnological",
-        role: "Product Manager Intern",
-        timeline: "Jul 2024 – May 2025",
-        platforms: ["Web", "Mobile Web"],
+        slug: "service-dey-marketplace",
+        featured: true,
+        title: "Service Dey",
+        subtitle: "Two-Sided Marketplace for Skilled Workers & Artisans",
+        client: "Peakpath Innovation",
+        role: "Associate Product Manager → Product/Sprint Lead",
+        timeline: "Jun 2025 – Present",
+        platforms: ["iOS", "Android"],
 
         // Media assets
         images: {
-            primary: "/images/deotech-hero.webp",
-            secondary: "/images/deotech-analytics.webp",
+            primary: "/images/servicedey1.jpg",
+            secondary: "/images/servicedey2.jpg",
         },
 
         // Tier 1: Home Page Teaser Card
         teaser: {
-            category: "USER RESEARCH & FEATURE STRATEGY",
-            headline: "Translating raw customer feedback into prioritized product requirements and usability enhancements for digital features.",
+            category: "PRODUCT OPS, QA & USER RESEARCH",
+            headline: "Leading sprint coordination, mobile QA, beta testing, and customer support for a two-sided services marketplace from early stage to live launch.",
             metrics: [
-                { label: "Core Scope", value: "Usability & Backlog" },
-                { label: "Key Deliverable", value: "PRD & Insights" },
+                { label: "Role Growth", value: "Associate PM → Sprint Lead" },
+                { label: "Core Scope", value: "QA, Sprints & Support" },
             ],
-            tags: ["Usability Audits", "Feature Prioritization", "Customer Feedback", "Business Analysis"],
+            tags: ["Sprint Leadership", "APK QA", "Beta Testing", "Customer Support"],
         },
 
         // Tier 2: /projects Listing Page Metadata
         listing: {
-            shortDescription: "Evaluated customer feedback, conducted usability assessments, and partnered with engineering to refine feature backlogs and UX flows.",
-            badge: "Completed Internship",
-            deliverables: ["Usability Assessments", "Feature Requirements", "Customer Feedback Analysis"],
+            shortDescription: "Grew from Associate PM into a sprint lead role, owning QA, beta testing, customer support, design/brand oversight, and cross-functional coordination for a live marketplace.",
+            badge: "Live Product",
+            deliverables: ["Sprint Leadership", "Manual QA & Bug Documentation", "Beta Testing Program", "Customer Support"],
         },
 
         // Tier 3: /projects/[slug] Deep-Dive Case Study
         caseStudy: {
-            executiveSummary: "During my Product Manager Internship at Deotechnological, I focused on identifying product friction, evaluating user behavior, and translating complex business requirements into actionable backlog items. Working alongside development teams, I helped optimize product usability and guide decision-making through structured customer feedback analysis.",
+            executiveSummary: "Service Dey is a two-sided digital marketplace connecting skilled workers and artisans with customers who need services such as appliance repairs, vehicle services, wardrobes, makeup, and hairstyling. Service providers manage their business through the platform, including payments, balances, sales tracking, and withdrawals, with funds held in escrow until the customer confirms job completion. I joined as an Associate Product Manager supporting the Lead PM, and my involvement grew to include sprint coordination, design and brand oversight, testing, customer support, user research, recruitment support, and cross-functional coordination.",
 
-            challenge: "Ensuring newly proposed features aligned with actual user needs and business priorities while eliminating usability bottlenecks before pushing developments to active engineering sprints.",
+            challenge: "As a lean startup with limited QA resources, the product needed someone to own sprint delivery, catch quality issues before launch, run beta testing without a dedicated research team, and keep the brand and user experience consistent across mobile and web.",
 
             keyResponsibilities: [
                 {
-                    title: "Customer Feedback & Usability Analysis",
-                    description: "Analyzed qualitative and quantitative customer feedback to uncover user pain points and evaluate software usability across key workflows.",
+                    title: "Sprint & Product Management",
+                    description: "Coordinated weekly sprint activities, facilitated sprint refinement and meetings, worked with engineering, web, and mobile teams to ensure tasks were assigned and progressed, and followed up on implementation timelines and expected APK deliveries.",
                 },
                 {
-                    title: "Translating Business Requirements into Product Improvements",
-                    description: "Assisted in breaking down high-level business goals into concise product recommendations and functional user stories for development teams.",
+                    title: "Quality Assurance & Testing",
+                    description: "Conducted extensive manual testing of APK builds on Android devices, assessing functionality, navigation, UX, copy, layout, and usability from onboarding through the core user journey. Identified issues including a subscription pricing error (₦250/month shown instead of ₦2,500/month) and broken links in policy sections, documenting them for the Jira backlog.",
                 },
                 {
-                    title: "Engineering Collaboration & Backlog Grooming",
-                    description: "Worked closely with software developers to prioritize feature requests based on effort, impact, and user satisfaction metrics.",
+                    title: "Beta Testing & User Research",
+                    description: "Personally helped recruit beta testers, shared the product, and collected feedback based on real usage — including escalating a screen-size issue where onboarding elements were not fully visible on certain devices.",
                 },
                 {
-                    title: "Data-Driven Decision Support",
-                    description: "Prepared structured product insights and presentation decks to assist leadership in evaluating release direction and UX enhancements.",
+                    title: "Customer Support",
+                    description: "Handled customer questions and complaints post-launch, particularly around verification issues, and distinguished between product problems and demand/marketing problems when service providers complained about low bookings.",
+                },
+                {
+                    title: "Design & Brand Oversight",
+                    description: "Worked with the graphic design team to ensure graphics were delivered on schedule, colours aligned with the brand, and messaging reflected the intended brand voice.",
+                },
+                {
+                    title: "Field & User Engagement",
+                    description: "Participated in field activities including street sign-ups and street interviews to engage users directly.",
                 },
             ],
 
             resultsAndImpact: [
-                "Identified critical user experience bottlenecks, leading to actionable feature refinements.",
-                "Streamlined developer handoffs by providing clear feature requirements sourced from validated user feedback.",
-                "Established structured feedback reporting formats for internal product reviews.",
+                "Service Dey became a live product and reached fewer than 1,000 users within its first year.",
+                "Caught and escalated a critical subscription pricing error before it caused significant revenue impact.",
+                "Built a beta-testing and feedback pipeline that fed directly into the Jira backlog for ongoing sprints.",
             ],
 
-            toolsUsed: ["Jira", "Confluence", "Miro", "Figma", "Google Sheets", "PowerPoint"],
+            toolsUsed: ["Jira", "Figma", "WhatsApp", "Slack"],
         },
     },
 
@@ -145,204 +153,225 @@ export const projects = [
 
     {
         id: "03",
-        slug: "rankreform-agency-digital-strategy",
-        featured: true, // Included in Home Teaser / Featured section
-        title: "Rankreform Digital Strategy & Engagement",
-        subtitle: "Audience Growth, Content Optimization & Analytics",
-        client: "Rankreform Agency",
-        role: "Associate Social Media Manager",
-        timeline: "May 2025 – Aug 2025",
-        platforms: ["Web", "Social Platforms"],
+        slug: "paydayplus-payroll-advances",
+        featured: false,
+        title: "PaydayPlus",
+        subtitle: "B2B Payroll & Employee Earned-Wage Access Platform",
+        client: "PaydayPlus",
+        role: "Associate Product Support",
+        timeline: "",
+        platforms: [],
 
         // Media assets
         images: {
-            primary: "/images/rankreform-hero.webp",
-            secondary: "/images/rankreform-analytics.webp",
+            primary: "/images/paydayplus1.webp",
+            secondary: "/images/paydayplus2.jpg",
         },
 
         // Tier 1: Home Page Teaser Card
         teaser: {
-            category: "DIGITAL ENGAGEMENT & ANALYTICS",
-            headline: "Executing data-led content strategies and evaluating engagement metrics to strengthen brand visibility and client growth.",
+            category: "PRODUCT IDEATION & DEV COORDINATION",
+            headline: "Supporting product ideation and daily development coordination for a B2B payroll platform exploring earned-wage access for employees.",
             metrics: [
-                { label: "Focus Area", value: "Engagement & Growth" },
-                { label: "Key Deliverable", value: "Campaign Analytics" },
+                { label: "Product Stage", value: "In Development" },
+                { label: "Core Scope", value: "Ideation & Stand-up Coordination" },
             ],
-            tags: ["Digital Strategy", "Metrics Analysis", "Brand Engagement", "Client Communications"],
+            tags: ["Product Ideation", "Fintech", "Daily Stand-ups", "Dependency Tracking"],
         },
 
         // Tier 2: /projects Listing Page Metadata
         listing: {
-            shortDescription: "Managed digital campaigns, tracked audience interaction metrics, and optimized communication channels to elevate brand presence.",
-            badge: "Completed Role",
-            deliverables: ["Content Strategy", "Performance Analytics", "Client Relationship Management"],
+            shortDescription: "Supported early-stage product thinking, led daily stand-ups with developers, tracked progress and dependencies, and contributed a key feature idea for employee earned-wage access.",
+            badge: "In Development",
+            deliverables: ["Stand-up Coordination", "Feature Ideation", "Dependency Tracking"],
         },
 
         // Tier 3: /projects/[slug] Deep-Dive Case Study
         caseStudy: {
-            executiveSummary: "At Rankreform Agency, I led digital content strategy and audience engagement initiatives across client accounts. By monitoring engagement performance metrics, I turned raw interaction data into actionable strategy adjustments that expanded brand reach and strengthened client relationships[cite: 1].",
+            executiveSummary: "PaydayPlus is a B2B financial product being developed to make it easier for businesses to pay their employees, while also exploring employee access to advances or loans based on earnings already accumulated. As the product is still in the building stage, my involvement has focused on supporting the Lead PM, product ideation, delivery coordination, and early-stage product thinking.",
 
-            challenge: "Optimizing multi-channel content performance while establishing clear metrics to measure audience engagement and campaign ROI across diverse client campaigns[cite: 1].",
+            challenge: "Helping the product team think through how the loan/advance functionality could create real value for employees while remaining commercially viable for the business, and keeping backend and frontend development coordinated during daily stand-ups.",
 
             keyResponsibilities: [
                 {
-                    title: "Digital Content Strategy Development",
-                    description: "Designed targeted digital campaigns and strategy frameworks tailored to client brand goals and audience behaviors[cite: 1].",
+                    title: "Product Ideation & Planning Support",
+                    description: "Supported the Lead PM in product planning and ideation, and participated in discussions around how the product could become more useful, scalable, and commercially viable.",
                 },
                 {
-                    title: "Performance Metrics & Analytics Tracking",
-                    description: "Monitored and analyzed interaction metrics, conversion trends, and engagement data to evaluate campaign health[cite: 1].",
+                    title: "Daily Stand-Up Leadership",
+                    description: "Led daily stand-up meetings with developers, followed up on development progress, and recorded developer updates.",
                 },
                 {
-                    title: "Client Communications & Relationship Management",
-                    description: "Handled primary client updates, presented campaign performance summaries, and aligned content deliverables with stakeholder needs[cite: 1].",
+                    title: "Dependency Identification & Escalation",
+                    description: "Helped identify and communicate development dependencies, reporting progress to the Lead PM when necessary, including recurring coordination challenges around a web developer's availability.",
                 },
                 {
-                    title: "Brand Awareness & Audience Interaction",
-                    description: "Created structured digital content schedules that boosted active community engagement and expanded online visibility[cite: 1].",
+                    title: "Feature Contribution: Earned-Wage Advances",
+                    description: "Proposed allowing employees to access an advance based on the period they had already worked, an idea now being considered/implemented as part of the product's development.",
                 },
             ],
 
             resultsAndImpact: [
-                "Increased client brand visibility and active audience engagement through targeted campaigns[cite: 1].",
-                "Streamlined campaign evaluation using data-backed reporting metrics[cite: 1].",
-                "Enhanced client satisfaction through transparent performance reporting and communication channels[cite: 1].",
+                "Contributed a feature concept (earned-wage advances) that is being considered for implementation.",
+                "Kept backend and frontend development visible and coordinated through consistent stand-up tracking and follow-up.",
+                "Identified a use case for small businesses (10–20 employees) to pre-fund and schedule payroll through the platform, reducing manual payment errors.",
             ],
 
-            toolsUsed: ["Google Analytics", "Data Dashboards", "Google Sheets", "Canva", "Slack"],
+            toolsUsed: ["Stand-up/Dev Tracking Tools", "Slack"],
         },
     },
 
 
     {
         id: "04",
-        slug: "tayari-live-media-coordination",
+        slug: "safepulse-discreet-safety-app",
         featured: false,
-        title: "Tayari.live Media & Project Coordination",
-        subtitle: "Remote Cross-Border Coordination & Digital Media Production",
-        client: "Tayari.live (Kenya)",
-        role: "Video Editor Intern",
-        timeline: "Oct 2024 – Dec 2024",
-        platforms: ["Web", "Video Platforms"],
+        title: "SafePulse",
+        subtitle: "Discreet Safety Application for Abuse Prevention",
+        client: "SafePulse",
+        role: "Product Management / Research / Testing / Cross-functional Coordination",
+        timeline: "",
+        platforms: [],
 
         // Media assets
         images: {
-            primary: "/images/tayari-hero.webp",
-            secondary: "/images/tayari-media-flow.webp",
+            primary: "/images/safepulse1.jpg",
+            secondary: "/images/safepulse2.jpg",
         },
 
         // Tier 1: Home Page Teaser Card
         teaser: {
-            category: "REMOTE OPS & MEDIA PRODUCTION",
-            headline: "Coordinating cross-border digital media workflows and remote stakeholder alignment across distributed teams.",
+            category: "USER RESEARCH & DISGUISE UX DESIGN",
+            headline: "Leading research, feature design, and testing for a safety app that disguises itself to help vulnerable people discreetly seek help.",
             metrics: [
-                { label: "Team Structure", value: "Distributed / Remote" },
-                { label: "Core Competency", value: "Media Ops & Coordination" },
+                { label: "Focus Area", value: "Safety & Discreet UX" },
+                { label: "Core Scope", value: "Research, Design Review & Pitching" },
             ],
-            tags: ["Remote Coordination", "Media Production", "Stakeholder Alignment", "Distributed Ops"],
+            tags: ["User Research", "Design Review", "Investor Pitching", "Social Impact"],
         },
 
         // Tier 2: /projects Listing Page Metadata
         listing: {
-            shortDescription: "Managed digital media workflows and collaborated with international remote stakeholders in a fast-paced environment.",
-            badge: "Completed Remote Internship",
-            deliverables: ["Digital Media Assets", "Cross-Border Coordination", "Remote Workflow Management"],
+            shortDescription: "Led user research, shaped a disguise-mechanism feature, reviewed designs, tested core safety functionality, and represented the product in investor pitches.",
+            badge: "In Development",
+            deliverables: ["User Research", "Disguise Feature Design", "Design Reviews", "Investor Pitch"],
         },
 
         // Tier 3: /projects/[slug] Deep-Dive Case Study
         caseStudy: {
-            executiveSummary: "At Tayari.live, a Kenyan digital platform, I managed remote visual media production and digital asset workflows[cite: 1]. Operating across distributed locations required high organizational rigor, clear asynchronous communication, and seamless project coordination[cite: 1].",
+            executiveSummary: "SafePulse is a safety-focused application designed to help vulnerable people seek help discreetly and reduce the impact of abuse, particularly within African communities. The application disguises itself as an ordinary app on a user's phone and includes a discreet mechanism for triggering a tracker or call for help. Working within a team of two Product Managers and a Scrum Master, I contributed to product research, feature discussions, design reviews, testing, investor pitching, and team coordination.",
 
-            challenge: "Delivering high-volume, polished digital media assets while keeping international stakeholders synchronized across multiple time zones[cite: 1].",
+            challenge: "Designing a disguise mechanism convincing enough to protect users from an abuser noticing a safety-related app, while validating the concept through user research and defending its commercial viability to investors.",
 
             keyResponsibilities: [
                 {
-                    title: "Digital Media Asset Production",
-                    description: "Edited and produced high-quality digital video content formatted for multi-channel distribution[cite: 1].",
+                    title: "User Research",
+                    description: "Conducted individual product research, developed interview questions, shared questionnaires with potential users, collected and analysed responses, and combined findings with the team's own research to prioritise realistic improvements.",
                 },
                 {
-                    title: "Cross-Border Remote Collaboration",
-                    description: "Communicated with international remote teams and stakeholders to review deliverables and refine media specs[cite: 1].",
+                    title: "Disguise Feature Development",
+                    description: "Explored disguise options for discreet help-seeking, considering domestic abuse scenarios, and helped narrow the concept to around five choices including a weather app, calculator, and period-tracking app.",
                 },
                 {
-                    title: "Workflow Organization & Asset Management",
-                    description: "Maintained clear asset repositories and production timelines to ensure fast turnarounds without compromising media quality[cite: 1].",
+                    title: "Design Review",
+                    description: "Reviewed product designs for text alignment, colour consistency, spacing, screen density, and navigation clarity, and helped developers understand how screens were expected to look, using tools including Claude, Google Studio AI, and Stitch.",
+                },
+                {
+                    title: "Feature Testing",
+                    description: "Tested key features including the calculator disguise, the Pulse help-trigger button, response speed of help requests, and whether the intended user journey worked as expected.",
+                },
+                {
+                    title: "Investor Pitching",
+                    description: "Participated in investor pitches, challenging the assumption that abuse only affects women and defending the product's long-term commercial viability despite its social-impact focus.",
+                },
+                {
+                    title: "Cross-Functional Coordination",
+                    description: "Coordinated across teams during pitch-deck preparation, directly addressing team members who were under-contributing to keep the deliverable on track.",
                 },
             ],
 
             resultsAndImpact: [
-                "Delivered consistent, high-impact digital video assets under tight publishing schedules[cite: 1].",
-                "Demonstrated strong remote project execution and asynchronous team coordination[cite: 1].",
+                "Shaped a disguise-mechanism concept (five app-disguise options) that became core to the product's safety approach.",
+                "Delivered a completed investor pitch despite uneven team participation, by directly addressing contribution gaps.",
+                "Broadened the product's positioning by pushing back on the assumption that abuse only affects one demographic.",
             ],
 
-            toolsUsed: ["Video Editing Software", "Slack", "Google Workspace", "Asana", "Zoom"],
+            toolsUsed: ["Claude", "Google Studio AI", "Stitch", "Figma"],
         },
     },
 
 
     {
         id: "05",
-        slug: "servicedey-user-onboarding-activation",
+        slug: "cornerpulse-digital-banking",
         featured: false,
-        title: "Servicedey Customer Onboarding & Activation",
-        subtitle: "User Retention, Incomplete Registration Recovery & Lifecycle Engagement",
-        client: "Peakpath Innovation",
-        role: "Associate Product Manager",
-        timeline: "Jun 2025 – Present",
-        platforms: ["iOS", "Android", "Web Admin"],
+        title: "CornerPulse",
+        subtitle: "Pan-African Digital Banking & Cross-Border Payments Platform",
+        client: "CornerPulse",
+        role: "Product Overseer / Product Management",
+        timeline: "",
+        platforms: [],
 
         // Media assets
         images: {
-            primary: "/images/onboarding-hero.webp",
-            secondary: "/images/onboarding-funnel.webp",
+            primary: "/images/cornerpulse1.jpg",
+            secondary: "/images/cornerpulse2.jpg",
         },
 
         // Tier 1: Home Page Teaser Card
         teaser: {
-            category: "USER RETENTION & RETARGETING",
-            headline: "Optimizing the user onboarding lifecycle by re-engaging drop-off users and streamlining registration completion paths.",
+            category: "PRODUCT OVERSIGHT & AGENCY ACCOUNTABILITY",
+            headline: "Taking over stalled product oversight for a fintech app, driving an outsourced development agency toward consistent, accountable delivery.",
             metrics: [
-                { label: "Focus Area", value: "Activation Funnel" },
-                { label: "Target Metric", value: "Conversion Rate" },
+                { label: "Delivery Turnaround", value: "3 APKs in ~3 Months" },
+                { label: "Core Scope", value: "Agency Oversight & QA" },
             ],
-            tags: ["User Onboarding", "Activation Strategy", "Customer Engagement", "Funnel QA"],
+            tags: ["Product Oversight", "Fintech", "Agency Management", "Identity Verification"],
         },
 
         // Tier 2: /projects Listing Page Metadata
         listing: {
-            shortDescription: "Designed targeted re-engagement strategies to convert partial user signups into active, fully registered platform accounts.",
-            badge: "Ongoing Initiative",
-            deliverables: ["Drop-off Analysis", "Activation Workflows", "Customer Onboarding Ops"],
+            shortDescription: "Took over oversight of a stalled outsourced build, pushed the development agency toward accountable delivery, and drove onboarding, UX, and fraud-prevention improvements.",
+            badge: "In Development",
+            deliverables: ["Agency Oversight", "Onboarding Redesign Direction", "APK QA", "Identity Verification Strategy"],
         },
 
         // Tier 3: /projects/[slug] Deep-Dive Case Study
         caseStudy: {
-            executiveSummary: "Driving user growth requires minimizing drop-off at initial signup[cite: 1]. At Peakpath Innovation, I led targeted customer onboarding initiatives designed to engage users who left their profile setup or registration incomplete on Servicedey, converting dormant signups into active platform participants[cite: 1].",
+            executiveSummary: "CornerPulse is a fintech product aiming to compete in the Nigerian digital banking space, enabling users to bank digitally, send money across African countries, receive funds in local currency, buy and sell gift cards, convert currencies, and access funds while travelling via a CornerPulse card. The product is outsourced to an external development agency. I became responsible for overseeing the development process, challenging implementation decisions, testing builds, identifying gaps, and pushing the agency toward delivery.",
 
-            challenge: "Identifying key drop-off stages in the registration pipeline and establishing effective, empathetic outreach workflows to guide users through verification and profile completion[cite: 1].",
+            challenge: "The development agency had reportedly gone approximately two years without delivering a single functional APK, and had presented several requirements as technically impossible without being challenged.",
 
             keyResponsibilities: [
                 {
-                    title: "Registration Funnel Analysis",
-                    description: "Monitored user signup logs to isolate steps where users abandoned registration before completing their profile[cite: 1].",
+                    title: "Taking Over Product Oversight",
+                    description: "Requested and tested an APK upon joining, engaged directly with the agency's lead developer/CEO, and researched comparable products and technologies to test claims that certain requirements were not possible.",
                 },
                 {
-                    title: "Targeted Outreach & Re-Engagement Strategy",
-                    description: "Executed proactive customer engagement workflows to reach users with uncompleted signups and guide them through registration hurdles[cite: 1].",
+                    title: "Onboarding Intervention",
+                    description: "Pushed for a redesigned onboarding experience that clearly introduced the CornerPulse brand and purpose, with clearer messaging and more intentional first-time user experience.",
                 },
                 {
-                    title: "Onboarding Flow Feedback Loop",
-                    description: "Gathered direct feedback from onboarded users to inform engineering and UX design teams on necessary friction reductions in the sign-up process[cite: 1].",
+                    title: "Product & UX Oversight",
+                    description: "Pushed the agency on text alignment, colour consistency, spacing, account creation, login/sign-up simplicity, account upgrade functionality, live facial verification, currency conversion, and core transaction functionality.",
+                },
+                {
+                    title: "Identity Verification & Fraud Prevention",
+                    description: "Considered fraud risk for a financial product and pushed for live facial verification against submitted ID documents, challenging the team to research appropriate identity-verification APIs rather than accepting technical limitations.",
+                },
+                {
+                    title: "APK Testing & QA",
+                    description: "Personally tested every new APK screen by screen, documenting issues, whether requested changes were implemented, and unresolved errors, to give the agency specific, actionable feedback.",
                 },
             ],
 
             resultsAndImpact: [
-                "Increased successful profile completions and overall active user conversion on the Servicedey platform[cite: 1].",
-                "Reduced onboarding churn by addressing user pain points directly during signup[cite: 1].",
-                "Established standard operational practices for ongoing customer re-engagement[cite: 1].",
+                "Drove the agency to deliver multiple APK builds, including three within approximately three months, after roughly two years of no functional delivery.",
+                "Increased development accountability and made progress visible and trackable.",
+                "Advanced the identity-verification strategy by pushing the team to research compatible NIN verification APIs instead of accepting the requirement as unworkable.",
             ],
 
-            toolsUsed: ["Jira", "Google Analytics", "Google Sheets", "Customer Support Tools", "Slack"],
+            toolsUsed: ["APK QA Tools", "Identity Verification APIs (research)"],
         },
     },
 

@@ -80,6 +80,13 @@ export default function VersatilityMatrix() {
         </h2>
       </div>
 
+      <p className="mb-12 max-w-3xl">
+        Product management {`isn't`} just about defining requirements; it is about
+        keeping wheels turning. My approach combines systematic QA testing,
+        actionable user feedback, and cross-functional coordination to ensure
+        software is stable and teams stay aligned.
+      </p>
+
       {/* Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
         {pillars.map((pillar, idx) => {
@@ -91,13 +98,13 @@ export default function VersatilityMatrix() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.4, delay: idx * 0.1 }}
-              className="bg-coffee-base/20 border border-coffee-medium/20 rounded-2xl p-6 sm:p-8 hover:border-coffee-medium/40 transition-all flex flex-col justify-between group"
+              transition={{ duration: 0.4, }}
+              className="bg-coffee-base/20 border border-coffee-medium/20 rounded-2xl px-6 sm:px-8 py-4 hover:border-coffee-medium/40 transition-all flex flex-col justify-between group"
             >
               <div>
                 {/* Top Row: Identifier & Icon */}
                 <div className="flex items-center justify-between mb-4">
-                  <span className="font-mono text-xs text-coffee-tan font-bold tracking-widest">
+                  <span className="opacity-0 select-none pointer-events-none font-mono text-xs text-coffee-tan font-bold tracking-widest">
                     [{pillar.id}]
                   </span>
                   <div className="p-2.5 bg-coffee-dark/60 rounded-xl border border-coffee-medium/30 text-coffee-tan group-hover:text-coffee-cream transition-colors">
@@ -120,7 +127,7 @@ export default function VersatilityMatrix() {
               <div className="pt-4 border-t border-coffee-medium/10">
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                   {pillar.skills.map((skill, sIdx) => (
-                    <li key={sIdx} className="flex items-center gap-2">
+                    <li key={sIdx} className="flex items-start gap-2">
                       <CheckCircle2 className="w-3.5 h-3.5 text-coffee-cream shrink-0" />
                       <span className="font-mono text-[11px] text-coffee-cream">
                         {skill}

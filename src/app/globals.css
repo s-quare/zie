@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+@custom-variant hover (&:hover);
+@custom-variant group-hover (.group:hover &);
+
 @theme {
   --font-sans: var(--font-jakarta), system-ui, sans-serif;
   --font-serif: var(--font-playfair), Georgia, serif;

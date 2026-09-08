@@ -61,16 +61,13 @@ export default function ExperienceTimeline() {
   ];
 
   return (
-    <section 
+    <section
       aria-labelledby="experience-heading"
-      className="w-full max-w-[1200px] mx-auto my-20 px-4 sm:px-8"
+      className="w-full my-20 px-4 sm:px-8"
     >
       {/* Section Header */}
       <div className="mb-12 border-b border-coffee-medium/20 pb-6">
-        <span className="font-mono text-xs text-coffee-tan uppercase tracking-widest block mb-2">
-          [ 04. PROFESSIONAL TRAJECTORY ]
-        </span>
-        <h2 
+        <h2
           id="experience-heading"
           className="font-serif font-bold text-3xl sm:text-4xl text-coffee-cream leading-tight"
         >
@@ -78,15 +75,22 @@ export default function ExperienceTimeline() {
         </h2>
       </div>
 
+      <p className="mb-12 max-w-3xl">
+        My career has focused on managing digital products, coordinating
+        cross-border teams, and verifying software reliability through hands-on
+        quality testing. Here is a timeline of the roles where I have delivered
+        consistent results.
+      </p>
+
       {/* Vertical Timeline */}
       <div className="relative border-l border-coffee-medium/30 ml-4 md:ml-8 pl-6 md:pl-10 flex flex-col gap-18">
         {experiences.map((exp, idx) => (
           <motion.article
             key={exp.id}
-            initial={{ opacity: 0, x: -16 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.4, delay: idx * 0.1 }}
+            transition={{ duration: 0.4, }}
             className="relative group"
           >
             {/* Node Dot on Timeline */}
@@ -94,7 +98,6 @@ export default function ExperienceTimeline() {
 
             {/* Container Card */}
             <div className="">
-              
               {/* Top Meta Info */}
               <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
                 <div>
@@ -123,13 +126,17 @@ export default function ExperienceTimeline() {
               {/* Highlights List */}
               <ul className="flex flex-col gap-2.5 mt-4 pt-4 border-t border-coffee-medium/10">
                 {exp.highlights.map((item, hIdx) => (
-                  <li key={hIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-coffee-cream/80 font-light leading-relaxed">
-                    <span className="text-coffee-tan mt-1.5 shrink-0 text-[8px]">◆</span>
+                  <li
+                    key={hIdx}
+                    className="flex items-start gap-2.5 text-xs sm:text-sm text-coffee-cream/80 font-light leading-relaxed"
+                  >
+                    <span className="text-coffee-tan mt-1.5 shrink-0 text-[8px]">
+                      ◆
+                    </span>
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
-
             </div>
           </motion.article>
         ))}

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/Link";
 import { notFound } from "next/navigation";
 import {
   ArrowLeft,
@@ -26,11 +26,15 @@ export async function generateMetadata({ params }) {
   }
 
   // Fallback Logic: project.image -> project.image2 -> general og-image.webp
-  const ogImage = project.images.primary || project.images.secondary || "/images/og-image.webp";
+  const ogImage =
+    project.images.primary ||
+    project.images.secondary ||
+    "/images/og-image.webp";
 
   const title = `${project.title}: ${project.subtitle}`;
-  const description = project?.listing?.shortDescription || `Explore the project management roadmap, scope execution, and impact metrics for ${project.title}.`
-    
+  const description =
+    project?.listing?.shortDescription ||
+    `Explore the project management roadmap, scope execution, and impact metrics for ${project.title}.`;
 
   return {
     title,
@@ -72,17 +76,15 @@ export default async function ProjectDetailPage({ params }) {
       {/* HERO SECTION - BLEEDS TO VERY TOP EDGES */}
       <header className="relative w-full min-h-[85vh] flex flex-col justify-end overflow-hidden">
         {/* Hero Background Image (Spans 2/3 width on Large Screens, Bleeds Right Edge) */}
-        <div className="absolute top-0 right-0 w-full lg:w-2/3 h-full z-0">
+        <div className="absolute top-0 right-0 w-full h-full z-0 blur-xs">
           <AltImage
-            src={project.images?.primary || "/images/placeholder.webp"}
+            src={project.images?.secondary || "/images/placeholder.webp"}
             alt={`${project.title} hero display`}
             priority
           />
 
           <div className="absolute inset-0 w-full h-full bg-linear-to-t from-black via-black/70 to-transparent" />
 
-          {/* Horizontal Blend (Left to Right for Desktop overlay) */}
-          <div className="hidden lg:block absolute inset-0 bg-linear-to-r from-black via-black/80 to-transparent" />
         </div>
 
         {/* Hero Content Layer */}
@@ -131,10 +133,12 @@ export default async function ProjectDetailPage({ params }) {
                 <ShieldCheck className="w-4 h-4 text-coffee-tan" />
                 <span className="text-white">{project.role}</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Calendar className="w-4 h-4 text-coffee-tan" />
-                <span className="text-white">{project.timeline}</span>
-              </div>
+              {project.timeline && (
+                <div className="flex items-center gap-2">
+                  <Calendar className="w-4 h-4 text-coffee-tan" />
+                  <span className="text-white">{project.timeline}</span>
+                </div>
+              )}
             </div>
           </div>
         </div>

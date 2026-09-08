@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/Link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -13,7 +13,7 @@ export default function HeroAlternative() {
       {/* 1. FULL-SCREEN BLURRED HEAD SHOT BACKGROUND */}
       <div className="absolute inset-0 h-full w-full pointer-events-none z-0">
         <Image
-          src="/images/zie-image2.webp"
+          src="/images/zie-image.jpg"
           alt="Peace Chigozie Background"
           fill
           priority
@@ -96,7 +96,7 @@ export default function HeroAlternative() {
         >
           <div className="relative w-full max-w-85 sm:max-w-95 mx-auto aspect-3/4 bg-coffee-base border-2 border-coffee-cream/90 shadow-2xl overflow-hidden">
             <Image
-              src="/images/zie-image2.webp"
+              src="/images/zie-image.jpg"
               alt="Peace Chigozie Poster"
               fill
               priority
@@ -152,7 +152,7 @@ export default function HeroAlternative() {
             <img
               src="/images/trust.webp"
               alt="Peace is 5 star"
-              className="absolute h-8 w-auto absolute bottom-2 left-4 opacity-90"
+              className="absolute h-8 w-auto bottom-2 left-4 opacity-90"
             />
           </div>
         </motion.div>
@@ -186,7 +186,7 @@ function DateBadge() {
       </div>
 
       {/* Two-line Stacked Year */}
-      <div className="relative -left-1 flex flex-col text-base font-black leading-[80%] tracking-wider text-coffee-dark scale-140">
+      <div className="relative -left-1.5 -top-1 flex flex-col text-xl font-black leading-[80%] tracking-wider text-coffee-dark font-serif scale-130">
         <span>{yearTop}</span>
         <span>{yearBottom}</span>
       </div>
