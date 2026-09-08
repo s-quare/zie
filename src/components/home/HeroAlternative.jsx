@@ -149,11 +149,7 @@ export default function HeroAlternative() {
               PM &<br /> OPS
             </p>
 
-            <img
-              src="/images/trust.webp"
-              alt="Peace is 5 star"
-              className="absolute h-8 w-auto bottom-2 left-4 opacity-90"
-            />
+            
           </div>
         </motion.div>
       </div>
