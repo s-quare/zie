@@ -70,7 +70,7 @@ export default function FeaturedProjects() {
                     alt={`${project.title} case study thumbnail`}
                   />
                   {/* Glassmorphic Badge Overlay */}
-                  <div className="absolute top-4 left-4 bg-coffee-dark/80 backdrop-blur-md border border-coffee-medium/30 px-3 py-1 rounded-full text-[10px] font-mono text-white uppercase tracking-wider">
+                  <div className="absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-mono text-white uppercase tracking-wider">
                     <LiquidGlass />
                     <span className="relative">{project.teaser.category}</span>
                   </div>

@@ -5,7 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  trailingSlash: true,   
+  trailingSlash: true,
+  allowedDevOrigins: ['10.177.122.32'],
 };
 
 if (process.env.NODE_ENV !== "production") {

@@ -58,7 +58,7 @@ export default function AboutSection() {
 
           <div className="flex flex-col items-center">
             <span className="font-mono text-xs uppercase tracking-widest text-white font-bold">
-              Peace Chinagorom Chigozie
+              Peace Chigozie Chinagorom
             </span>
             <span className="text-xs text-coffee-cream font-light">
               Associate Product Manager & Operations

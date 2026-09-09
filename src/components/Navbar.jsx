@@ -26,7 +26,8 @@ export default function Navbar() {
       <div className="flex items-start justify-between w-full">
         
         {/* LEFT SIDE: Brand Name Link */}
-        <div className="pointer-events-auto pt-1.5">
+        <div className="relative opacity-0 pointer-events-none select none p-1.5">
+          
           <span 
             href="/" 
             className="relative font-serif font-semibold text-sm sm:text-base tracking-wider text-white hover:text-coffee-tan transition-colors"

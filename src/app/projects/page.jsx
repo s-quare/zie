@@ -49,7 +49,7 @@ export default function ProjectsPage() {
                   alt={`${project.title} thumbnail`}
                 />
                 {project.listing?.badge && (
-                  <div className="absolute top-3 left-3 bg-coffee-dark/80 backdrop-blur-md border border-coffee-medium/30 px-3 py-1 rounded-full text-[10px] font-mono text-coffee-tan uppercase tracking-wider">
+                  <div className="absolute top-3 left-3 backdrop-blur-md border px-3 py-1 rounded-full text-[10px] font-mono text-coffee-tan uppercase tracking-wider">
                     {project.listing.badge}
                   </div>
                 )}
