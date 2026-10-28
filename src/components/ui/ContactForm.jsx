@@ -88,6 +88,7 @@ export default function ContactForm({
               </label>
               <input
                 type="text"
+                name="name"
                 required
                 placeholder="e.g. Alex Morgan"
                 className="w-full bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-base text-coffee-cream placeholder:text-coffee-cream/30 focus:outline-none focus:border-coffee-tan transition-colors"
@@ -101,6 +102,7 @@ export default function ContactForm({
               </label>
               <input
                 type="email"
+                name="email"
                 required
                 placeholder="alex@company.com"
                 className="w-full bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-base text-coffee-cream placeholder:text-coffee-cream/30 focus:outline-none focus:border-coffee-tan transition-colors"
@@ -114,6 +116,7 @@ export default function ContactForm({
               </label>
               <input
                 type="text"
+                name="subject"
                 required
                 placeholder="Product Inquiry / Role Opportunity"
                 className="w-full bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-base text-coffee-cream placeholder:text-coffee-cream/30 focus:outline-none focus:border-coffee-tan transition-colors"
@@ -128,6 +131,7 @@ export default function ContactForm({
             </label>
             <textarea
               rows={9}
+              name="message"
               required
               placeholder="Tell me about your product requirements, timeline, or objectives..."
               className="w-full bg-white/10 border border-white/30 rounded-lg p-4 text-base text-coffee-cream placeholder:text-coffee-cream/30 focus:outline-none focus:border-coffee-tan transition-colors resize-none"
