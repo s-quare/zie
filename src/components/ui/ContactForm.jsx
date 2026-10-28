@@ -34,7 +34,7 @@ export default function ContactForm({
         setSubmitted(true);
         toast.success("Message sent successfully!", {
           description:
-            "Thank you for reaching out. Peace will get back to you soon.",
+            "Thank you for reaching out. I will get back to you soon.",
         });
       } else {
         throw new Error("Failed to send message.");
